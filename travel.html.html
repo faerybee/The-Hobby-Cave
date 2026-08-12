@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Travel — The Art of Living & Exploring</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav>
+    <div class="logo">travel diaries</div>
+    <ul class="nav-links">
+      <li><a href="#destinations">Destinations</a></li>
+      <li><a href="#planner">Planner</a></li>
+      <li><a href="#packing">Pack Up</a></li>
+    </ul>
+  </nav>
+  <div class="hero-container">
+    <div class="hero-left">
+      <p class="hero-badge">The Art of Living</p>
+      <h1 class="hero-title">
+        Explore the<br><em class="highlight">World</em> with<br>Purpose
+      </h1>
+      <p class="hero-subtitle">— & a good playlist</p>
+      <p class="hero-text">
+        Curated travel diaries, destination guides, budget itineraries and a packing list that won't let you forget your
+        sunscreen.
+      </p>
+      <a href="#destinations" class="primary-btn">Start Exploring</a>
+    </div>
+
+    <div class="hero-right">
+      <div class="polaroid">
+        <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=400&q=80"
+          alt="Paris">
+        <p class="polaroid-text">Paris</p>
+      </div>
+      <div class="polaroid">
+        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&q=80"
+          alt="Bali">
+        <p class="polaroid-text">Bali</p>
+      </div>
+      <div class="polaroid">
+        <img src="https://images.unsplash.com/photo-1542051841857-5f90071e7989?auto=format&fit=crop&w=400&q=80"
+          alt="Tokyo">
+        <p class="polaroid-text">Tokyo</p>
+      </div>
+    </div>
+  </div>
+
+  <marquee class="simple-marquee" scrollamount="10">
+    Paris &middot; Tokyo &middot; Rome &middot; Bali &middot; New York &middot; Santorini &middot;
+    Paris &middot; Tokyo &middot; Rome &middot; Bali &middot; New York &middot; Santorini
+  </marquee>
+
+  <div id="destinations" class="destinations-section">
+    <p class="section-subtitle">where to next?</p>
+    <h2 class="section-title">Destination Diaries</h2>
+
+    <div class="search-container">
+      <input id="dest-search" type="text" placeholder="Search a destination..." class="search-input">
+      <button onclick="surpriseMe()" class="surprise-btn">Surprise Me!</button>
+    </div>
+
+    <div class="dest-cards">
+
+      <div class="dest-card-wrap" data-name="paris france">
+        <a href="paris.html" class="dest-card">
+          <div class="dest-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=600&q=80"
+              alt="Paris" class="dest-card-img">
+            <div class="country-badge">France</div>
+          </div>
+          <div class="dest-card-content">
+            <h3 class="dest-title">Paris</h3>
+            <p class="dest-subtitle">City of Light & Love</p>
+            <p class="dest-features">Food Tours &nbsp; Louvre &nbsp; River Cruise</p>
+            <div class="dest-footer">
+              <div class="price">From ৳5,500/day</div>
+              <button class="explore-btn">Explore</button>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="dest-card-wrap" data-name="tokyo japan">
+        <a href="tokyo.html" class="dest-card">
+          <div class="dest-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1542051841857-5f90071e7989?auto=format&fit=crop&w=600&q=80"
+              alt="Tokyo" class="dest-card-img">
+            <div class="country-badge">Japan</div>
+          </div>
+          <div class="dest-card-content">
+            <h3 class="dest-title">Tokyo</h3>
+            <p class="dest-subtitle">Neon Lights & Noodles</p>
+            <p class="dest-features">Sushi Class &nbsp; Temples &nbsp; Harajuku</p>
+            <div class="dest-footer">
+              <div class="price">From ৳4,950/day</div>
+              <button class="explore-btn">Explore</button>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="dest-card-wrap" data-name="rome italy">
+        <a href="rome.html" class="dest-card">
+          <div class="dest-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=600&q=80"
+              alt="Rome" class="dest-card-img">
+            <div class="country-badge">Italy</div>
+          </div>
+          <div class="dest-card-content">
+            <h3 class="dest-title">Rome</h3>
+            <p class="dest-subtitle">The Eternal City</p>
+            <p class="dest-features">Colosseum &nbsp; Trevi Fountain &nbsp; Pasta</p>
+            <div class="dest-footer">
+              <div class="price">From ৳6,050/day</div>
+              <button class="explore-btn">Explore</button>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="dest-card-wrap" data-name="bali indonesia">
+        <a href="bali.html" class="dest-card">
+          <div class="dest-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=600&q=80"
+              alt="Bali" class="dest-card-img">
+            <div class="country-badge">Indonesia</div>
+          </div>
+          <div class="dest-card-content">
+            <h3 class="dest-title">Bali</h3>
+            <p class="dest-subtitle">Island of the Gods</p>
+            <p class="dest-features">Monkey Forest &nbsp; Yoga &nbsp; Surfing</p>
+            <div class="dest-footer">
+              <div class="price">From ৳3,850/day</div>
+              <button class="explore-btn">Explore</button>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="dest-card-wrap" data-name="new york usa">
+        <a href="newyork.html" class="dest-card">
+          <div class="dest-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=600&q=80"
+              alt="New York" class="dest-card-img">
+            <div class="country-badge">USA</div>
+          </div>
+          <div class="dest-card-content">
+            <h3 class="dest-title">New York</h3>
+            <p class="dest-subtitle">The City That Never Sleeps</p>
+            <p class="dest-features">Central Park &nbsp; Broadway &nbsp; Skyline</p>
+            <div class="dest-footer">
+              <div class="price">From ৳8,800/day</div>
+              <button class="explore-btn">Explore</button>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="dest-card-wrap" data-name="santorini greece">
+        <a href="santorini.html" class="dest-card">
+          <div class="dest-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=600&q=80"
+              alt="Santorini" class="dest-card-img">
+            <div class="country-badge">Greece</div>
+          </div>
+          <div class="dest-card-content">
+            <h3 class="dest-title">Santorini</h3>
+            <p class="dest-subtitle">Blue Domes & Golden Sunsets</p>
+            <p class="dest-features">Oia Sunset &nbsp; Boat Tour &nbsp; Wine</p>
+            <div class="dest-footer">
+              <div class="price">From ৳7,150/day</div>
+              <button class="explore-btn">Explore</button>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="planner" class="planner-section">
+    <p class="section-subtitle">your personal travel guide</p>
+    <h2 class="section-title">Smart Itinerary Planner</h2>
+
+    <div class="notebook">
+
+      <div class="spiral-bar">
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+      </div>
+
+      <div class="notebook-content">
+        <h2 class="notebook-title">Plan Your Perfect Trip</h2>
+
+        <form id="planner-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Choose Destination</label>
+              <select id="dest">
+                <option value="paris">Paris, France</option>
+                <option value="tokyo">Tokyo, Japan</option>
+                <option value="rome">Rome, Italy</option>
+                <option value="bali">Bali, Indonesia</option>
+                <option value="new york">New York, USA</option>
+                <option value="santorini">Santorini, Greece</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Trip Length</label>
+              <select id="days">
+                <option value="3">3 Days</option>
+                <option value="5">5 Days</option>
+                <option value="7">7 Days</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Daily Budget</label>
+              <select id="budget">
+                <option value="budget">Budget (under $60/day)</option>
+                <option value="mid">Mid-range ($60–$150/day)</option>
+                <option value="luxury">Luxury ($150+/day)</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="submit-btn">
+            Generate My Itinerary
+          </button>
+        </form>
+
+        <div class="countdown-box">
+          <p class="countdown-label">When are you leaving?</p>
+          <div class="countdown-row">
+            <input type="date" id="trip-date" class="date-input">
+            <button id="countdown-btn" class="countdown-btn">Count Down!</button>
+          </div>
+          <p id="countdown-result" class="countdown-result"></p>
+        </div>
+
+        <!-- Result appears here via JavaScript -->
+        <div id="itin-result" class="itin-result">
+          <h3 id="itin-title" class="itin-title"></h3>
+          <div id="itin-days"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="packing" class="packing-section">
+    <p class="section-subtitle">don't forget a thing</p>
+
+    <div class="packing-notebook">
+      <h2 class="packing-title">Pack Your Bags</h2>
+
+      <ul id="checklist" class="checklist">
+        <li>
+          <input type="checkbox" onclick="toggleDone(this)">
+          <label class="checklist-text">Passport & Visa Documents</label>
+        </li>
+        <li>
+          <input type="checkbox" onclick="toggleDone(this)">
+          <label class="checklist-text">Travel Adapter</label>
+        </li>
+        <li>
+          <input type="checkbox" onclick="toggleDone(this)">
+          <label class="checklist-text">Camera + Memory Card</label>
+        </li>
+        <li>
+          <input type="checkbox" onclick="toggleDone(this)">
+          <label class="checklist-text">Comfortable Walking Shoes</label>
+        </li>
+        <li>
+          <input type="checkbox" onclick="toggleDone(this)">
+          <label class="checklist-text">Sunscreen SPF 50</label>
+        </li>
+        <li>
+          <input type="checkbox" onclick="toggleDone(this)">
+          <label class="checklist-text">Medications & First Aid</label>
+        </li>
+        <li>
+          <input type="checkbox" onclick="toggleDone(this)">
+          <label class="checklist-text">Travel Insurance Card</label>
+        </li>
+        <li>
+          <input type="checkbox" onclick="toggleDone(this)">
+          <label class="checklist-text">Earphones + Power Bank</label>
+        </li>
+      </ul>
+
+      <div class="add-item-row">
+        <input type="text" id="new-item" placeholder="Add your own item..." class="add-item-input">
+        <button onclick="addItem()" class="add-btn">Add</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <p class="footer-logo">travel diaries</p>
+        <p>A section of <em>The Art of Living & Exploring</em> — a lifestyle discovery website combining food, travel,
+          fitness, fashion and creativity.</p>
+      </div>
+      <div class="footer-links">
+        <p class="footer-title">Destinations</p>
+        <ul>
+          <li><a href="paris.html">Paris</a></li>
+          <li><a href="tokyo.html">Tokyo</a></li>
+          <li><a href="rome.html">Rome</a></li>
+          <li><a href="bali.html">Bali</a></li>
+          <li><a href="newyork.html">New York</a></li>
+          <li><a href="santorini.html">Santorini</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <p class="footer-title">Features</p>
+        <ul>
+          <li><a href="#planner">Itinerary Planner</a></li>
+          <li><a href="#packing">Packing List</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <div class="footer-bottom">
+    travel
+  </div>
+
+  <button id="back-to-top" class="back-to-top">Top</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
